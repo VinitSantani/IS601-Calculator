@@ -1,7 +1,7 @@
 import unittest
 import Function
 import csv
-import Calculator from Calculator;
+from Calculator import Calculator;
 
 
 class Test(unittest.TestCase) :
@@ -46,5 +46,8 @@ class Test(unittest.TestCase) :
         with open('./data/Unit Test Square Root.csv', mode='r') as csv_file:
             csv_reader= csv.DictReader(csv_file)
             for row in csv_reader:
-                self.assertEqual(self.calculator.sqrt(int(row['Value 1'])), round(float(row['Result']),8))                      
-unittest.main()
+                self.assertEqual(self.calculator.sqrt(int(row['Value 1'])), round(float(row['Result']),8))  
+                
+                    
+if __name__ == '__main__':
+    unittest.main()
