@@ -17,11 +17,20 @@ class Calculator:
 
     def multiply(self, a, b):
         self.result = multiply(a,b);
+        return self.result
         
     def divide(self, a, b):
         self.result = divide(a,b);
+        return self.result
 
+    
+    def sqrt(self, a):
+        self.result = sqrt(a);
+        return self.result
 
+    def square(self, a):
+        self.result= square(a)
+        return self.result;
 
 
 # print("Please select operation -\n" \
