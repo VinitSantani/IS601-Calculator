@@ -11,9 +11,9 @@ class Calculator:
         self.result = add(a, b)
         return self.result
 
-#     def subtract(self, a, b):
-#         self.result = subtract(a, b)
-#         return self.result
+    def subtract(self, a, b):
+        self.result = subtract(a, b)
+        return self.result
 
 
 
