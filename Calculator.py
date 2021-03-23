@@ -17,6 +17,9 @@ class Calculator:
 
     def multiply(self, a, b):
         self.result = multiply(a,b);
+        
+    def divide(self, a, b):
+        self.result = divide(a,b);
 
 
 
